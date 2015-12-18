@@ -1,0 +1,6 @@
+#!/bin/bash
+
+FF="/usr/lib/firefox/firefox"
+LIBDIR=`pwd`/dist/addr_shim.so
+
+`LD_PRELOAD=${LIBDIR} ${FF} $1`
